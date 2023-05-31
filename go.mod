@@ -16,6 +16,7 @@ require (
 	github.com/rakyll/statik v0.1.7
 	github.com/spf13/viper v1.15.0
 	github.com/stretchr/testify v1.8.2
+	go.starlark.net v0.0.0-20230525235612-a134d8f9ddca
 	golang.org/x/crypto v0.8.0
 	google.golang.org/genproto v0.0.0-20230223222841-637eb2293923
 	google.golang.org/grpc v1.53.0
