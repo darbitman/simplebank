@@ -72,7 +72,7 @@ func runDBMigration(migrationURL string, dbSource string) {
 }
 
 func runTaskProcessor(redisOpt asynq.RedisClientOpt, store db.Store) {
-	taskProcessor := worker.NewRedisTasProcessor(redisOpt, store)
+	taskProcessor := worker.NewRedisTaskProcessor(redisOpt, store)
 	log.Info().Msg("start task processor")
 	err := taskProcessor.Start()
 	if err != nil {
