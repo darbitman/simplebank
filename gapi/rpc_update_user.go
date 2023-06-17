@@ -36,8 +36,8 @@ func (server *Server) UpdateUser(ctx context.Context, req *pb.UpdateUserRequest)
 			Valid:  req.FullName != nil,
 		},
 		Email: sql.NullString{
-			String: *req.FullName,
-			Valid:  req.FullName != nil,
+			String: *req.Email,
+			Valid:  req.Email != nil,
 		},
 	}
 
